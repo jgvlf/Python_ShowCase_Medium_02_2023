@@ -1,3 +1,5 @@
+from os import system
+
 green = "\033[1;32m"
 red = "\033[1;31m"
 cancel = "\033[m"
@@ -19,6 +21,8 @@ while True:
         break
 
 media = (nota_1+nota_2)/2
+
+system('cls')
 
 print(f"A média do aluno corresponde à {media}.", end=' ')
 if(media < 50):
